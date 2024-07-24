@@ -3,9 +3,9 @@ import '../styles/about.scss';
 
 const About = () => {
   return (
-    <div className="card">
+    <div className="about">
         <img></img>
-        <nav>
+        <nav className='about__nav'>
           <ul className="">
             <li>Fiabilité</li>
             <li>Respect</li>
