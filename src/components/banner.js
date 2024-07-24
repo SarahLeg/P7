@@ -1,14 +1,13 @@
 import React from "react";
 import '../styles/banner.scss';
-import bannerHome from '../assets/images/cliff.png';
 
-const Banner = () => {
-    return (
+const Banner = ({ imageUrl, text }) => {
+  return (
       <div className="banner">
-        <img src={bannerHome} alt="Cliffs"/>
-        <p>Chez vous, partout et ailleurs</p>
+          <img src={imageUrl} alt="Banner"/>
+          <p>{text}</p>
       </div>
-    );
-  };
+  );
+};
   
-  export default Banner;
+export default Banner;

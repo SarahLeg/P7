@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/card.scss';
-// import data from '../assets/data/logements.json';
 
 const Card = ({ title, cover }) => {
     return (
