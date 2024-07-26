@@ -2,8 +2,10 @@
 
 .collapse{
     padding: 10px;
-    margin-left: 15%;
+    margin: auto;
+    width: 80%;
     button{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         border: none;
@@ -12,14 +14,12 @@
         font-weight: bold;
         font-size: 16px;
         padding: 7px;
-        width: 80%;
         border-radius: 5px;
     }
     p{
         padding: 7px;
         margin: 0;
         background-color: rgb(247, 247, 247);
-        width: 78%;
         font-size: 12px;
     }
     &__icon{

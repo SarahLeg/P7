@@ -3,7 +3,6 @@ import '../styles/about.scss';
 import Banner from '../components/banner';
 import bannerAbout from '../assets/images/mountains.png';
 import Collapse from '../components/collapse';
-import data from '../assets/data/logements.json';
 
 const About = () => {
   return (

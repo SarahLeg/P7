@@ -15,6 +15,7 @@ const Home = () => {
               key={listing.id} //clé unique pour chaque élément (évite les warnings)
               title={listing.title}
               cover={listing.cover}
+              link="/404"
             />
           ))}
         </div>

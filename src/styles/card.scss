@@ -3,11 +3,12 @@
 .card {
     background-color: $special-orange;
     margin: 5px;
-    height: 200px;
-    width: 30%;
+    height: 180px;
+    width: 29%;
     border-radius: 8px;
     overflow: hidden;
     h2{
+        margin: auto;
         color: white;
         padding-right: 30%;
         font-size: 12px;

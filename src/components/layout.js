@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <header className="header">
-        <h1>K<i class="fa-solid fa-house"></i>sa</h1>
+        <h1>K<i className="fa-solid fa-house"></i>sa</h1>
         <nav>
           <ul>
             <li><NavLink to="/home" className={({ isActive }) => isActive ? 'link active-link' : 'link'}>Accueil</NavLink></li>
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
 
       <footer className="footer">
-        <p>K<i class="fa-solid fa-house"></i>sa</p>
+        <p>K<i className="fa-solid fa-house"></i>sa</p>
         <span>© 2024 Kasa. All rights reserved</span>
       </footer>
     </>
