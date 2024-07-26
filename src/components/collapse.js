@@ -9,11 +9,16 @@ const Collapse = ({ title, children }) => {
     };
 
     return (
-        <div>
-            <button onClick={toggleCollapse}>
+        <div className="collapse">
+            <button>
                 {title}
+                <i className={`fa-solid fa-angle-up collapse__icon ${isOpen ? 'open' : 'closed'}`} onClick={toggleCollapse}></i>
             </button>
-            {isOpen && <div className="collapse__content">{children}</div>}
+            {isOpen && 
+                <div className={`collapse__content ${isOpen ? 'open' : 'closed'}`}>
+                {children}
+                </div>
+            }
         </div>
     );
 };

@@ -1,5 +1,7 @@
+@import 'index';
+
 .card {
-    background-color: rgb(223, 67, 67);
+    background-color: $special-orange;
     margin: 5px;
     height: 200px;
     width: 30%;

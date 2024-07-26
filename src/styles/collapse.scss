@@ -1,0 +1,45 @@
+@import 'index';
+
+.collapse{
+    padding: 10px;
+    margin-left: 15%;
+    button{
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        background-color: $special-orange;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 7px;
+        width: 80%;
+        border-radius: 5px;
+    }
+    p{
+        padding: 7px;
+        margin: 0;
+        background-color: rgb(247, 247, 247);
+        width: 78%;
+        font-size: 12px;
+    }
+    &__icon{
+        cursor: pointer;
+    }
+    &__icon.open{
+        animation-name: open;
+        animation-duration: 300ms;
+        transform: rotate(180deg);
+    }
+    &__icon.closed{
+        animation-name: closed;
+        animation-duration: 300ms;
+    }
+}
+@keyframes open {
+    from {transform: rotate(360deg)}
+    to {transform: rotate(180deg)}
+}
+@keyframes closed {
+    from {transform: rotate(180deg)}
+    to {transform: rotate(360deg)}
+}

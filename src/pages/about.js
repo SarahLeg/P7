@@ -12,20 +12,20 @@ const About = () => {
       <div>
                 <Collapse title="Fiabilité">
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et 
-                      <br/>toutes les informations sont réfulièrement vérifiées par nos équipes</p>
+                      <br/>toutes les informations sont régulièrement vérifiées par nos équipes.</p>
                 </Collapse>
                 <Collapse title="Respect">
                     <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoires ou de <br/>
-                    perturbation du voisinage entraînera une exclusion de notre plateforme</p>
+                    perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
                 </Collapse>
                 <Collapse title="Service">
-                    <p>??? sur la maquette c'est le même texte que Respect juste au dessus.</p>
+                    <p>à définir</p>
                 </Collapse>
                 <Collapse title="Sécurité">
-                    <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôts que pour les voyageurs, chaque logement <br/>
+                    <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement <br/>
                     correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au <br/>
                     locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons <br/>
-                    également des ateliers sur la sécurité domestique pour tous nos hôtes</p>
+                    également des ateliers sur la sécurité domestique pour tous nos hôtes.</p>
                 </Collapse>
             </div>
     </div>
