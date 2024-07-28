@@ -3,19 +3,23 @@
 .error{
     color: $special-orange;
     text-align: center;
+    margin: 40px;
     &__404{
         font-size: 150px;
+        font-weight: bolder;
     }
     &__text{
         font-size: 20px;
     }
     p{
         margin: 0;
-        padding: 20px;
     }
     &__link{
-        padding: 20px;
-        margin: 20px;
-        text-decoration: none;
+        font-size: 12px;
+        padding: 60px;
+        display: inline-block;
+        &:visited{
+            color: black;
+        }
     }
 }

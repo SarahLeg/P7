@@ -5,7 +5,8 @@ import Home from '../pages/home';
 import About from '../pages/about';
 import Banner from '../components/banner';
 import Error from '../pages/error';
-import Rental from '../pages/rental-page';
+// import Rental from '../pages/rental-page';
+// import data from '../assets/data/logements.json';
 
 const AppRouter = () => {
   return (
@@ -17,7 +18,8 @@ const AppRouter = () => {
           <Route path="/banner" element={<Banner/>} />
           <Route path="/404" element={<Error/>} />
           <Route path="*" element={<Error/>} />
-          <Route path="rental" element={<Rental/>} />
+          {/* <Route path="/rental/:id" element={<Rental/>} /> */}
+          {/* <Route path="/rental" element={<Rental/>} /> */}
         </Routes>
       </Layout>
     </Router>
