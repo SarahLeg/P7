@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <header className="header">
-        <h1>K<i className="fa-solid fa-house"></i>sa</h1>
+        <span>K<i className="fa-solid fa-house"></i>sa</span>
         <nav>
           <ul>
             <li><NavLink to="/home" className={({ isActive }) => isActive ? 'link active-link' : 'link'}>Accueil</NavLink></li>

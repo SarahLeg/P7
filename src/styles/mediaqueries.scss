@@ -1,4 +1,4 @@
-$small: 376px;
+$small: 375px;
 
 @media screen and (max-width: $small) {
 
@@ -7,11 +7,17 @@ $small: 376px;
     .header {
         padding: 0px 15px 10px;
         h1 {
-            font-size: 60px;
+            font-size: 40px;
             i{
                 font-size: 30px;
             }
         }
+        a{
+            text-transform: capitalize;
+        }
+    }
+    .active-link{
+        text-transform: capitalize;
     }
     
     .footer {
@@ -51,7 +57,7 @@ $small: 376px;
     //home
 
     .home {
-        padding: 0px 20px 25px;
+        padding: 0px 10px 25px;
     }
     .cards-container{
         padding: 0px;

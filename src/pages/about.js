@@ -7,7 +7,7 @@ import Collapse from '../components/collapse';
 const About = () => {
   return (
     <div className="about">
-      <Banner imageUrl={bannerAbout} text="" />
+      <Banner imageUrl={bannerAbout}/>
       <div>
                 <Collapse title="Fiabilité">
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et 
