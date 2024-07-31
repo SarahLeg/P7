@@ -11,16 +11,16 @@ const Rentaldetails = () => {
 
   return (
     <div className='details'>
-      <div className='left-details'>
+      <div>
         <h1>{title}</h1>
-        <p>{location}</p>
+        <p className='location'>{location}</p>
         <div className='tags'>
           {tags.map((tag, index) => (
-            <span key={index} className='tag'>{tag}</span>
+            <span key={index}>{tag}</span>
           ))}
         </div>
       </div>
-      <div className="right-details">
+      <div>
         <div className="host">
           <img src={host.picture} alt={host.name} />
           <p>{host.name}</p>

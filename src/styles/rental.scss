@@ -1,51 +1,95 @@
-.slideshow {
+@import 'index';
+
+.rental{
+    padding: 20px 70px 20px;
+}
+
+///style du slideshow
+
+.slideshow {   
     position: relative;
-    max-width: 100%;
-    margin: auto;
     overflow: hidden;
-    height: 500px;
-  
-    .slide {
-      display: none;
-      text-align: center;
-      
-      &.active {
-        display: block;
-      }
-      
-      .image {
+    height: 400px;
+    border-radius: 15px;
+
+    .image{
+        height: 400px;
         width: 100%;
-        height: auto;
-      }
+        object-fit: cover;
     }
-  
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      background-color: rgba(0, 0, 0, 0.5);
-  
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-      }
+
+    .arrow-left, .arrow-right {
+        padding: 20px;
+        position: absolute;
+        top: 30%;
+        font-size: 90px;
+        color: $special-orange;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        opacity: 30%;
+        &:hover{
+            opacity: 100%;
+        }
     }
-  
-    .prev {
-      left: 0;
-      border-radius: 3px 0 0 3px;
+    .arrow-left {
+        left: 0%;
     }
-  
-    .next {
-      right: 0;
-      border-radius: 0 3px 3px 0;
+    .arrow-right {
+        right: 0%;
     }
-  }
+}
+
+///style details
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    color: $special-orange; 
+    font-weight: 600;
+    height: 130px;
+
+    h1{
+         margin: 30px 0px 0px;
+    }
+
+    .location{
+     font-size: 15px;
+     margin: 0;
+     color: black;
+    }
+
+    .host{
+        padding: 20px 0px 0px;
+        display: flex;
+        align-items: center;
+
+        img{
+            order: 1;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+        }
+        p{
+            font-size: 16px;
+            margin: 0px 10px 0px;
+            width: 70px;
+            text-align: right;
+            text-wrap: wrap;
+        }
+    }
+
+    .tags{
+        color: white;
+        margin: 15px 0px 10px;
+        span{
+            background-color: $special-orange;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+    }
+
+
+}

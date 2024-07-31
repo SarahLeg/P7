@@ -18,21 +18,19 @@ const Rentalslideshow = () => {
     setCurrent(current === 0 ? pictures.length - 1 : current - 1);
   };
 
+
   return (
-    <div className="slideshow">
-      <button onClick={prevSlide} className="prev">❮</button>
-      <button onClick={nextSlide} className="next">❯</button>
-      {pictures.map((picture, index) => (
-        <div
-          className={index === current ? 'slide active' : 'slide'}
-          key={index}
-        >
-          {index === current && (
-            <img src={picture} alt={`Slide ${index}`} className="image" />
-          )}
-        </div>
-      ))}
-    </div>
+      <div className="slideshow">
+        <button onClick={prevSlide} className='arrow-left'>❮</button>
+        <button onClick={nextSlide}className='arrow-right'>❯</button>
+        {pictures.map((picture, index) => (
+          <div>
+            {index === current && (
+              <img key={index} src={picture} alt={`Slide ${index}`} className="image" />
+            )}
+          </div>
+        ))}
+      </div>
   );
 };
 
