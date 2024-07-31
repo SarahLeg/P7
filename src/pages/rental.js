@@ -16,8 +16,10 @@ const Rental = () => {
     <div className="rental">
     <Rentalslideshow/>
     <Rentaldetails/>
-    <Collapse title="Description" content={description} />
-    <Collapse title="Equipements" content={equipments.join(', ')} />
+    <div className='collapses'>
+      <Collapse title="Description" content={description} />
+      <Collapse title="Equipements" content={equipments.join(', ')} />
+    </div>
     </div>
   );
 };
