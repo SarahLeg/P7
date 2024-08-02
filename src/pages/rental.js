@@ -10,15 +10,25 @@ const Rental = () => {
 
   const { id } = useParams();
   const rental = data.find(item => item.id === id)
-  const { description, equipments, } = rental;
+  const { description, equipments } = rental;
+
+  console.log(description);
 
   return (
     <div className="rental">
     <Rentalslideshow/>
     <Rentaldetails/>
     <div className='collapses'>
-      <Collapse title="Description" content={description} />
-      <Collapse title="Equipements" content={equipments.join(', ')} />
+      <Collapse title="Description">
+        {description} 
+      </Collapse>
+      <Collapse title="Equipements">
+        <ul>
+          {equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
+          ))}
+        </ul>
+      </Collapse>
     </div>
     </div>
   );

@@ -16,11 +16,9 @@
         padding: 7px;
         border-radius: 5px;
     }
-    p{
-        padding: 7px;
-        margin: 0;
+    &__content{
+        padding: 10px;
         background-color: rgb(247, 247, 247);
-        font-size: 12px;
     }
     &__icon{
         cursor: pointer;

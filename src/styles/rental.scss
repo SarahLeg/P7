@@ -12,16 +12,15 @@
     height: 400px;
     border-radius: 15px;
 
-    .image{
+    img{
         height: 400px;
         width: 100%;
         object-fit: cover;
     }
-
-    .arrow-left, .arrow-right {
+    .arrow-left, .arrow-right{
         padding: 20px;
         position: absolute;
-        top: 30%;
+        top: 33%;
         font-size: 90px;
         color: $special-orange;
         background-color: transparent;
@@ -80,7 +79,14 @@
     }
 
     .rating{
-        margin-top: 20px;
+        margin-top: 15px;
+        font-size: 20px;
+        i{
+            padding: 3px;
+        }
+        .star-empty{
+            color: lightgray;   
+        }
     }
 
     .tags{
@@ -99,21 +105,27 @@
             text-align: center;
         }
     }
-
-
 }
+
+//style collapses
 
 .collapses {
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 25px;
-
+    margin-bottom: 25px;
     .collapse{
         padding: 0;
-        width: 45%;
-        button{
-            padding: 10px;
-            font-size: 15px;
+        margin: 0;
+        width: 47%;
+        &__content{
+            font-size: 16px;
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style-type: none;
+                }
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/layout.scss';
 
 const Layout = ({ children }) => {
@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
         <span>K<i className="fa-solid fa-house"></i>sa</span>
         <nav>
           <ul>
-            <li><NavLink to="/home" className={({ isActive }) => isActive ? 'link active-link' : 'link'}>Accueil</NavLink></li>
-            <li><NavLink to="/about" className={({ isActive }) => isActive ? 'link active-link' : 'link'}>A Propos</NavLink></li>
+            <li><NavLink to="/home" key={1} className={({ isActive }) => isActive ? 'link active-link' : 'link'}>Accueil</NavLink></li>
+            <li><NavLink to="/about" key={2} className={({ isActive }) => isActive ? 'link active-link' : 'link'}>A Propos</NavLink></li>
           </ul>
         </nav>
       </header>

@@ -21,12 +21,14 @@ const Rentalslideshow = () => {
 
   return (
       <div className="slideshow">
-        <button onClick={prevSlide} className='arrow-left'>❮</button>
-        <button onClick={nextSlide}className='arrow-right'>❯</button>
+        <button onClick={prevSlide} className='arrow-left'><i className="fa-solid fa-chevron-left"/></button>
+        <button onClick={nextSlide}className='arrow-right'><i className="fa-solid fa-chevron-right"/></button>
+        {/* <button onClick={prevSlide} className='arrow-left'>❮</button>
+        <button onClick={nextSlide}className='arrow-right'>❯</button> */}
         {pictures.map((picture, index) => (
-          <div>
+          <div key={index}>
             {index === current && (
-              <img key={index} src={picture} alt={`Slide ${index}`} className="image" />
+              <img src={picture} alt={`Slide ${index}`}/>
             )}
           </div>
         ))}

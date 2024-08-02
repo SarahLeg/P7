@@ -18,11 +18,11 @@ const Rentaldetails = () => {
       {
       if (i <= rating)
       {
-        stars.push(<span key={i} className="star-full">★</span>);
+        stars.push(<span key={i} className="star-full"><i className="fa-solid fa-star"></i></span>);
       } 
       else
       {
-        stars.push(<span key={i} className="star-empty">☆</span>);
+        stars.push(<span key={i} className="star-empty"><i className="fa-solid fa-star"></i></span>);
       }
       }
     return stars;

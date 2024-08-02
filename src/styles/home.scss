@@ -4,11 +4,8 @@
 .cards-container{
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   padding: 25px;
   background-color: rgb(229, 226, 226);
   border-radius: 20px;
   gap: 20px;
-  height: 400px;
-  overflow: hidden;
 }
