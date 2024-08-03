@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import data from '../assets/data/logements.json';
 import '../styles/rental.scss';
 
+
 const Rental = () => {
 
   const { id } = useParams();

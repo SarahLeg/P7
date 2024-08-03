@@ -18,13 +18,10 @@ const Rentalslideshow = () => {
     setCurrent(current === 0 ? pictures.length - 1 : current - 1);
   };
 
-
   return (
       <div className="slideshow">
         <button onClick={prevSlide} className='arrow-left'><i className="fa-solid fa-chevron-left"/></button>
         <button onClick={nextSlide}className='arrow-right'><i className="fa-solid fa-chevron-right"/></button>
-        {/* <button onClick={prevSlide} className='arrow-left'>❮</button>
-        <button onClick={nextSlide}className='arrow-right'>❯</button> */}
         {pictures.map((picture, index) => (
           <div key={index}>
             {index === current && (
@@ -32,6 +29,7 @@ const Rentalslideshow = () => {
             )}
           </div>
         ))}
+        <span>{current + 1}/{pictures.length}</span>
       </div>
   );
 };

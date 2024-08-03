@@ -39,7 +39,7 @@ const Rentaldetails = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className='host-rating'>
         <div className="host">
           <img src={host.picture} alt={host.name} />
           <p>{host.name}</p>
