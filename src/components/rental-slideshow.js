@@ -18,18 +18,36 @@ const Rentalslideshow = () => {
     setCurrent(current === 0 ? pictures.length - 1 : current - 1);
   };
 
+  // const displaySlideshowBtns = () => {
+  //   if (pictures.length > 1) {
+  //     return (
+  //       <>
+  //         <button onClick={prevSlide} className='arrow-left'><i className="fa-solid fa-chevron-left" /></button>
+  //         <button onClick={nextSlide} className='arrow-right'><i className="fa-solid fa-chevron-right" /></button>
+  //         <span>{current + 1}/{pictures.length}</span>
+  //       </>
+  //     );
+  //   }
+  //   return null;
+  // };
+
   return (
       <div className="slideshow">
-        <button onClick={prevSlide} className='arrow-left'><i className="fa-solid fa-chevron-left"/></button>
-        <button onClick={nextSlide}className='arrow-right'><i className="fa-solid fa-chevron-right"/></button>
+        {/* {displaySlideshowBtns()} */}
+        {pictures.length > 1 && (
+          <>
+          <button onClick={prevSlide} className='arrow-left'><i className="fa-solid fa-chevron-left"/></button>
+          <button onClick={nextSlide}className='arrow-right'><i className="fa-solid fa-chevron-right"/></button>
+          <span>{current + 1}/{pictures.length}</span>
+          </>
+        )}
         {pictures.map((picture, index) => (
-          <div key={index}>
+          <>
             {index === current && (
-              <img src={picture} alt={`Slide ${index}`}/>
+              <img key={index} src={picture} alt={`Slide ${index}`}/>
             )}
-          </div>
+          </>
         ))}
-        <span>{current + 1}/{pictures.length}</span>
       </div>
   );
 };
