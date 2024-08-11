@@ -8,7 +8,7 @@ import bannerHome from '../assets/images/cliff.png';
 const Home = () => {
   return (
     <div className="home">
-       <Banner imageUrl={bannerHome} text="Chez vous, partout et ailleurs" />
+       <Banner imageUrl={bannerHome} text="Chez vous, partout et ailleurs"/>
         <div className='cards-container'>
           {data.map(listing => (
             <Card
@@ -16,6 +16,7 @@ const Home = () => {
               title={listing.title}
               cover={listing.cover}
               link={"/rental/" + listing.id}
+              //La valeur de link est construite dynamiquement en concaténant la chaîne de caractères "/rental/" avec l'identifiant spécifique listing.id.
             />
           ))}
         </div>

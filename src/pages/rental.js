@@ -15,12 +15,12 @@ const Rental = () => {
     return <Navigate to="*"/>;
   }
 
-  const { description, equipments } = rental;
+  const { description, equipments, pictures } = rental;
 
   return (
     <div className="rental">
-    <Rentalslideshow/>
-    <Rentaldetails/>
+    <Rentalslideshow pictures={pictures}/>
+    <Rentaldetails rentaldetails={rental}/>
     <div className='collapses'>
       <Collapse title="Description">
         {description} 

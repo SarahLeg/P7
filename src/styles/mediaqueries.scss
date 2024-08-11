@@ -1,9 +1,8 @@
-$small: 375px;
+$small: 768px;
 
 @media screen and (max-width: $small) {
 
 ///layout
-
     .header {
         padding: 0px 15px 10px;
         height: 60px;
@@ -23,7 +22,6 @@ $small: 375px;
     .active-link{
         text-transform: capitalize;
     }
-    
     .footer {
         padding: 40px;
             i{
@@ -42,16 +40,15 @@ $small: 375px;
     }
 
 ///banner
-
     .banner { 
-        margin: 0px 5px 15px;
-        height: 100px;
+        margin: 0px 0px 15px;
+        height: 120px;
         border-radius: 10px;
         h1{
-           top: -110%;
-           left: 5%;
+           bottom: 110%;
+           left: 3%;
            font-size: 25px;
-           width: 210px;
+           width: 220px;
            display: inline-block;
            white-space: pre-line;
            line-height: 20px;
@@ -59,49 +56,44 @@ $small: 375px;
     }
 
 ///home
-
     .home {
-        padding: 0px 10px 25px;
+        padding: 0px 20px 25px;
         height: auto;
     }
     .cards-container{
         padding: 0px;
         background-color: white;
-        gap: 10px;
-        height: 800px;
+        gap: 15px;
     }
     .card {
         border-radius: 10px;
         height: 250px;
         width: 100%;
         h2{
+            bottom: 25%;
             font-size: 15px;
-        }
-        img{
-            height: 200px;
-            object-fit: cover;
+            padding-right: 40%;
         }
     }
 
 ///about
-
     .about{
-        margin: 0px 10px 15px;
+        margin: 0px 20px 0px;
     }
     .collapse{
-        padding: 8px;
-        width: 97%;
+        margin: 0;
+        margin: auto;
+        width: 100%;
         button{
             font-size: 14px;
-
         }
         p{
-            font-size: 10px;
+
+            font-size: 13px;
         }
     }
 
 ///error page
-
     .error{
         &__404{
             font-size: 80px;
@@ -121,90 +113,86 @@ $small: 375px;
     }
 
 ///rental page
-
     .rental{
         padding: 0px 15px 0px;
     }
     
         //style slideshow
-    
-    .slideshow {
-        height: 250px;
-        
-        span{
-            display: none;
-        }
-        img{
+        .slideshow {
             height: 250px;
-        }
-        .arrow-left, .arrow-right{
-            padding: 5px;
-            top: 43%;
-            font-size: 30px;
-        }
-    }
-    
-        //style details
-    
-    .details{
-        display: flex;
-        flex-wrap: wrap;
-        font-weight: normal;
-        height: 120px;
-        margin: 5px 0px 15px;
-    
-        h1{
-            margin: 0;
-            font-size: 20px;
-            font-weight: 600;
-        }
-        .location{
-         font-size: 14px;
-         font-weight: 600;
-        }
-        .host-rating{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-        }
-        .host{      
-            padding: 3px;
-            order: 2;
-            img{
-                width: 40px;
-                height: 40px;
-            }
-            p{
-                font-size: 13px;
-            }
-        }
-        .rating{
-            font-size: 12px;
-        }
-        .tags{
+            
             span{
-                border-radius: 5px;
-                padding: 3px;
-                font-size: 10px;
-                font-weight: 700;
-                width: 80px;
+                display: none;
+            }
+            img{
+                height: 250px;
+            }
+            .arrow-left, .arrow-right{
+                padding: 5px;
+                top: 43%;
+                font-size: 30px;
             }
         }
-    }
-    
-        //style collapses
-    
-    .collapses {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5px;
-        .collapse{
-            margin-bottom: 20px;
-            width: 100%;
-            &__content{
+        
+        //style details
+        .details{
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: normal;
+            height: 120px;
+            margin: 5px 0px 15px;
+        
+            h1{
+                margin: 0;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .location{
+            font-size: 14px;
+            font-weight: 600;
+            }
+            .host-rating{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .host{      
+                padding: 3px;
+                order: 2;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+            .rating{
                 font-size: 12px;
             }
+            .tags{
+                span{
+                    border-radius: 5px;
+                    padding: 3px;
+                    font-size: 10px;
+                    font-weight: 700;
+                    width: 80px;
+                }
+            }
         }
-    }
+        
+        //style collapses
+        .collapses {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+            .collapse{
+                margin-bottom: 20px;
+                width: 100%;
+                &__content{
+                    font-size: 12px;
+                }
+            }
+        }
 }

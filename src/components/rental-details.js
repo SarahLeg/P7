@@ -1,12 +1,8 @@
 import React from 'react';
 import '../styles/rental.scss';
-import data from '../assets/data/logements.json';
-import { useParams } from 'react-router-dom';
 
-const Rentaldetails = () => {
+const Rentaldetails = ({rentaldetails}) => {
 
-  const { id } = useParams();
-  const rentaldetails = data.find(item => item.id === id)
   const { title, location, tags, host, rating } = rentaldetails;
 
   const generateStars = (rating) => {

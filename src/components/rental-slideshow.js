@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/rental.scss';
-import data from '../assets/data/logements.json';
-import { useParams } from 'react-router-dom';
 
-const Rentalslideshow = () => {
-  const { id } = useParams();
-  const rentalslideshow = data.find(item => item.id === id);
-  const { pictures } = rentalslideshow;
-
+const Rentalslideshow = ({pictures}) => {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -41,13 +35,7 @@ const Rentalslideshow = () => {
           <span>{current + 1}/{pictures.length}</span>
           </>
         )}
-        {pictures.map((picture, index) => (
-          <>
-            {index === current && (
-              <img key={index} src={picture} alt={`Slide ${index}`}/>
-            )}
-          </>
-        ))}
+        <img src={pictures[current]} alt={`Slide ${current}`}/>
       </div>
   );
 };
