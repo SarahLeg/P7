@@ -12,11 +12,10 @@ const Home = () => {
         <div className='cards-container'>
           {data.map(listing => (
             <Card
-              key={listing.id} //clé unique pour chaque élément (évite les warnings)
+              key={listing.id}
               title={listing.title}
               cover={listing.cover}
               link={"/rental/" + listing.id}
-              //La valeur de link est construite dynamiquement en concaténant la chaîne de caractères "/rental/" avec l'identifiant spécifique listing.id.
             />
           ))}
         </div>

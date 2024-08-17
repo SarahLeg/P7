@@ -6,7 +6,6 @@ import { useParams, Navigate } from 'react-router-dom';
 import data from '../assets/data/logements.json';
 import '../styles/rental.scss';
 
-
 const Rental = () => {
   const { id } = useParams();
   const rental = data.find(item => item.id === id)
